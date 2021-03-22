@@ -1,0 +1,2 @@
+# Covid-19-PATIENT-TRACKER-SYSTEM
+This project is a web based project which works for Corona affected patient, I made this project concerning about recent pandemic conditions ,This project has a relation of patient-doctor and yes it also contains gender based treatment like for example if a lady patient wants a lady doctor and has separate tabs fir CRUD operations executing on DATABASE , It also contains tabular view of data //made with  NODEJS(EXPRESS JS) || EJS || MONGODB || MYSQL || HTML+CSS+BOOTSTRAP+JAVASCRIPT
