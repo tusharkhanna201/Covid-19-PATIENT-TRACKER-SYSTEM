@@ -1,0 +1,52 @@
+<%-include('partials/header')-%>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patient-Database</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <button type="button" name="button" class="btn btn-danger " onclick="window.location.href='http://localhost:3000/Patient-database'"> Back </button>
+<h1>STATUS-POSITIVE</h1>
+      <table id="table" class="table" >
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>first_name</th>
+                  <th>last_name</th>
+                  <th>DateOfBirth</th>
+                  <th> Age</th>
+                  <th>Phone_number </th>
+                  <th>BLOOD_GROUP </th>
+                  <th>Address</th>
+                  <th> Gender</th>
+                  <th>covid_status</th>
+                  <th>sys_id</th>
+
+              </tr>
+          </thead>
+           <tbody>
+           <% print.forEach(function (patient) { %>
+              <tr>
+                    <td><%= patient.ID %></td>
+                    <td><%= patient.first_name %></td>
+                    <td><%= patient.last_name %></td>
+                    <td><%= patient.DateOfBirth %></td>
+                    <td><%= patient.Age%></td>
+                    <td><%= patient.Phone_number %></td>
+                    <td><%= patient.BLOOD_GROUP %></td>
+                    <td><%= patient.Address %></td>
+                    <td><%= patient.Gender %></td>
+                    <td><%= patient.covid_status %></td>
+                    <td><%= patient.sys_id %></td>
+
+              </tr>
+           <% }) %>
+           </tbody>
+      </table>
+  </body>
+</html>
+
+
+</html>

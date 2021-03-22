@@ -1,0 +1,184 @@
+
+ body {
+  height: 100%;
+  background-color: #fcf8e8;
+  text-align: center;
+}
+.head1{
+  font-family: cursive;
+  font-style: italic;
+  text-decoration: underline;
+}
+.login{
+  background-color: white;
+  height:400px;
+  width:300px;
+  position:static;
+  margin: 200px;
+  border-style:solid;
+  border-width: thick;
+
+
+
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+
+
+     padding-top: 15px;
+     padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #c6ebc9;
+
+
+}
+
+.Dbtn{
+position:relative;
+margin-left: 120px;
+
+}
+.CRUD{
+  padding:50px;
+  background-color: #d6efc7;
+}
+.positive{
+border-radius: 70%;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+h3{
+  line-height: 40px;
+}
+.main
+{
+
+background-color: #fcf8e8;
+color:grey;
+  height:100%;
+padding:120px;
+}
+.register{
+padding: 50px;
+
+background-color: #00af91;
+
+}
+.button
+{
+  border-radius: 40%;
+
+
+}
+.pos{
+  padding: 50px;
+}
+p
+{
+  max-width:50em;
+  padding:20px;
+  height:10px;
+}
+.symp-image{
+height:200px;
+padding:10px;
+}
+.corona
+{
+height:100px;
+padding:10px;
+
+}
+img{
+  height: 100px;
+
+
+  position: relative;
+  padding-right: 100px;
+
+}
+
+.email{
+   padding:20px 20px;
+}
+.form
+{
+ padding:100px;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input.first{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.middle{
+  margin-bottom: -1px;
+  border-radius:0;
+
+}
+
+.form-signin input.last {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.icon
+{
+  height:75px;
+margin-bottom: 35px;
+text-align: center;
+}
+.medico {
+     background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed;
+    background-size: cover;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+}
+
+*[role="form"] h2 {
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.check{
+
+  position: absolute;
+  margin-left: 55px;
+}

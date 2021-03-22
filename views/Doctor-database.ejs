@@ -1,0 +1,39 @@
+
+<%-include('partials/header')-%>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Database</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <table id="table" class="table" >
+          <thead>
+              <tr>
+                  <th>docid</th>
+                  <th>first_name</th>
+                  <th>last_name</th>
+                  <th>phone_number</th>
+                  <th>address</th>
+                  <th>gender</th>
+              </tr>
+          </thead>
+           <tbody>
+           <% print.forEach(function (doctor) { %>
+              <tr>
+                  <td><%= doctor.sys_id %></td>
+                  <td><%= doctor.FirstDocName %></td>
+                  <td><%= doctor.LastDocName %></td>
+                  <td><%= doctor.phone_number %></td>
+                  <td><%= doctor.Address %></td>
+                  <td><%= doctor.Gender %></td>
+
+              </tr>
+           <% }) %>
+           </tbody>
+      </table>
+  </body>
+</html>
+
+
+</html>

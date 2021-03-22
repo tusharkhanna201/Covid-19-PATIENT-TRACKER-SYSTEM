@@ -1,0 +1,41 @@
+<%-include('partials/header')-%>
+
+<div class="register">
+  <button type="button" class="btn btn-info button btn-lg " onclick="window.location.href='http://localhost:3000/patientdetail'"> Patient-Registeration</button>
+  <button type="button" class="btn btn-warning button btn-lg " onclick="window.location.href='http://localhost:3000/doctordetail'"> Doctor-Assignation</button>
+  <button type="button" class="btn btn-info button btn-lg "style="background-color:#ffcc29;" onclick="window.location.href='http://localhost:3000/Patient-database'">Patient Data</button>
+  <button type="button" class="btn btn-primary button btn-lg " onclick="window.location.href='http://localhost:3000/doc-pat'">Treatment-BY</button>
+
+
+ <div class="container pos">
+  <label for="">See all the Corona-positive patients</label>
+      <button type="button" class="btn btn-danger button btn-lg " onclick="window.location.href='http://localhost:3000/positive'">Corona-positve patients</button>
+</div>
+</div>
+    <section class="main">
+  <img class="corona" src="images\covid-19.png" alt="">
+
+     <div class="COVID">
+
+       <h1 class="heading1">COVID-19</h1>
+
+       <h3 class="description"><%=Description%></h3>
+
+
+     </div>
+     <div class="Symptoms">
+<h1 class="heading1">Symptoms</h1>
+<h3><%=Symptom%></h3>
+<img class="symp-image" src="images\symptoms.png" alt="">
+     </div>
+
+         <div class="patient-add">
+           <h1>Patients Form</h1>
+           <h4>To register new patient click below button</h4>
+           <button type="button" class="btn btn-warning btn-lg" onclick="window.location.href='http://localhost:3000/patientdetail'">Register</button>
+         </div>
+              </section>
+  </body>
+
+  <h2 style="font-family:cursive">Made by Tushar Khanna and Vikram Singh</h2>
+</html>

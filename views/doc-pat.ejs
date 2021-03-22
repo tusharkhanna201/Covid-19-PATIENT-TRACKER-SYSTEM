@@ -1,0 +1,38 @@
+<%-include('partials/header')-%>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOC-PAT Database</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <table id="table" class="table" >
+          <thead>
+              <tr>
+                  <th>Pat_ID</th>
+                  <th>Patient_name</th>
+                  <th>Pat_phn</th>
+                  <th>Treated_by_DR</th>
+                  <th>Doc_phn</th>
+                  <th>sys_id</th>
+              </tr>
+          </thead>
+           <tbody>
+           <% print.forEach(function (obj) { %>
+              <tr>
+                  <td><%= obj.ID %></td>
+                  <td><%= obj.Patient_name %></td>
+                  <td><%= obj.pat_phn %></td>
+                  <td><%= obj.Treated_by_DR %></td>
+                  <td><%= obj.Doc_phn %></td>
+                  <td><%= obj.sys_id %></td>
+
+              </tr>
+           <% }) %>
+           </tbody>
+      </table>
+  </body>
+</html>
+
+
+</html>

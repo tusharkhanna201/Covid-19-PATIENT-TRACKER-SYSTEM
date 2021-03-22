@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Doctordetail</title>
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="css/style.css" rel="stylesheet">
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+    <nav class="navbar navbar-default">
+       <div class="container">
+         <div class="navbar-header">
+           <p class="navbar-brand">COVID</p>
+         </div>
+           <ul class="nav navbar-nav navbar-right">
+
+             <li id="home"><a href="/">HOME</a></li>
+             <li id="home"><a href="/database">DATABASE</a></li>
+             <li id="about"><a href="/about">ABOUT US</a></li>
+             <li id="contact"><a href="/contact">CONTACT US</a></li>
+             <li id="home"><a href="/">Logout</a></li>
+           </ul>
+       </div>
+     </nav>
+
+
+
+
+
+    </head>
+<body class='medico'>
+
+
+<div class="container">
+
+  <form class="form-horizontal" action="/doctordetail" role="form" method="post">
+                <h2>Doctor-assign</h2>
+
+               <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Doctor_Id</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="ID" placeholder="Doc_id" name="Docid" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="First Name" name="DoctorfirstName" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="lastName" name="DoctorlastName" placeholder="Last Name" class="form-control" autofocus>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="form-group">
+                    <label for="phoneNumber" class="col-sm-3 control-label">Phone number </label>
+                    <div class="col-sm-9">
+                        <input type="phoneNumber" id="phoneNumber" name="phoneNumber" placeholder="Phone number" class="form-control">
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                  <div class="form-group">
+                      <label for="Address" class="col-sm-3 control-label">Address</label>
+                      <div class="col-sm-9">
+                          <input type="text" id="lastName" name="address" placeholder="address" class="form-control" autofocus>
+                      </div>
+                  </div>
+</div>
+<label class="control-label col-sm-3">Gender</label>
+<div class="col-sm-6">
+    <div class="row">
+        <div class="col-sm-4">
+            <label class="radio-inline">
+                <input type="radio" id="femaleRadio" name = "gender" value="Female">Female
+            </label>
+        </div>
+        <div class="col-sm-4">
+            <label class="radio-inline">
+                <input type="radio" id="maleRadio" name = "gender" value="Male">Male
+            </label>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  function reset(response)
+{
+  response.redirect("/doctordetail");
+}
+</script>
+
+
+
+ <!-- /.form-group -->
+                <div class="form-group ">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <span class="help-block">*Required fields</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block " onclick="this.form.elements['text-input'].value=''">Assign</button>
+    <br>
+                <button type="button" name="button" class="Dbtn btn btn-danger btn-md " onclick="window.location.href='http://localhost:3000/Doctor-database'">database</button>
+
+                    <input class="Dbtn btn btn-primary btn-md" type="reset" value="Reset">
+
+
+
+</form>
+</div>
+
+<script src="main.js" charset="utf-8"></script>
+
+</body>

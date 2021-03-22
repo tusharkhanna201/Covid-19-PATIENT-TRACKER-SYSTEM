@@ -1,0 +1,23 @@
+<%-include('partials/header')-%>
+<body class="medico">
+  <form class="form-horizontal" action="/Delete-rec" role="form" method="post">
+
+
+               <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Patient-Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="ID" placeholder="Patient-Name" name="key" class="form-control" autofocus>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block ">Delete</button>
+    <br>
+                <button type="button" name="button" class="Dbtn btn btn-danger btn-md " onclick="window.location.href='http://localhost:3000/patient-database'">database</button>
+
+                    <input class="Dbtn btn btn-primary btn-md" type="reset" value="Reset">
+
+
+
+  </form>
+
+</body>
